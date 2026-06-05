@@ -1,0 +1,67 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 主渐变 - 深邃的蓝紫色 -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667EEA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4338CA;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 光泽渐变 -->
+    <linearGradient id="shine-gradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </linearGradient>
+    
+    <!-- 闪电渐变 -->
+    <linearGradient id="bolt-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 阴影 -->
+    <filter id="logo-shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景圆角矩形 -->
+  <rect width="200" height="200" rx="50" fill="url(#bg-gradient)"/>
+  
+  <!-- 顶部光泽效果 -->
+  <rect width="200" height="100" rx="50" fill="url(#shine-gradient)"/>
+  
+  <!-- Q字母设计 -->
+  <g filter="url(#logo-shadow)">
+    <!-- 外圆 -->
+    <circle cx="100" cy="92" r="42" fill="none" stroke="white" strokeWidth="10" opacity="0.95"/>
+    
+    <!-- 内部闪电 -->
+    <path 
+      d="M 110 70 L 90 92 L 103 92 L 85 114 L 105 92 L 92 92 Z" 
+      fill="url(#bolt-gradient)"
+      opacity="0.95"
+    />
+    
+    <!-- Q的尾巴 -->
+    <path 
+      d="M 126 118 Q 136 128, 146 138" 
+      stroke="white" 
+      strokeWidth="10" 
+      strokeLinecap="round"
+      opacity="0.95"
+    />
+  </g>
+  
+  <!-- 底部装饰点 -->
+  <circle cx="60" cy="160" r="6" fill="white" opacity="0.3"/>
+  <circle cx="140" cy="160" r="6" fill="white" opacity="0.3"/>
+</svg>

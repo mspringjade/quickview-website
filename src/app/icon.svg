@@ -1,0 +1,31 @@
+<svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="icon-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667EEA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4338CA;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="icon-shine" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </linearGradient>
+    
+    <linearGradient id="icon-bolt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="48" height="48" rx="12" fill="url(#icon-bg)"/>
+  <rect width="48" height="24" rx="12" fill="url(#icon-shine)"/>
+  
+  <g>
+    <circle cx="24" cy="22" r="10" fill="none" stroke="white" strokeWidth="2.5" opacity="0.95"/>
+    <path d="M 26 17 L 22 22 L 24.5 22 L 21 27 L 25 22 L 22.5 22 Z" fill="url(#icon-bolt)" opacity="0.95"/>
+    <path d="M 30 28 Q 32 30, 34 32" stroke="white" strokeWidth="2.5" strokeLinecap="round" opacity="0.95"/>
+  </g>
+  
+  <circle cx="14" cy="38" r="1.5" fill="white" opacity="0.3"/>
+  <circle cx="34" cy="38" r="1.5" fill="white" opacity="0.3"/>
+</svg>
